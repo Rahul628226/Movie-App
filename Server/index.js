@@ -14,9 +14,9 @@ const PORT = process.env.PORT || 4500;
 const DB_CONNECT = process.env.DB_CONNECT;
 
 
-app.use(express.static(path.join(__dirname,"./Client/movieapp/build")))
+app.use(express.static(path.join(__dirname,"/build")))
 app.get("*",(req,res)=>{
-  res.sendFile(path.join(__dirname,"./Client/movieapp/index.html"))
+  res.sendFile(path.join(__dirname,"/build/index.html"))
 });
 // Connect to MongoDB
 mongoose
