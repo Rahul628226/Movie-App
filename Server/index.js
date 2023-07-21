@@ -8,7 +8,12 @@ const path=require("path");
 app.use(express.json());
 
 
-app.use(cors());
+app.use(cors({
+
+  origin:[""],
+  methods:["POST","GET"],
+  credentials:true
+}));
 
 const PORT = process.env.PORT || 4500;
 const DB_CONNECT = process.env.DB_CONNECT;
