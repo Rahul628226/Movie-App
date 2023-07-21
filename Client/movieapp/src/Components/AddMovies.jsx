@@ -24,7 +24,7 @@ const AddMovies = () => {
 
     const clickHandler = async () => {
         try {
-            const response = await axios.post('http://localhost:3500/api/addMovie', inp);
+            const response = await axios.post('movie-app-ap.vercel.app/api/addMovie', inp);
             console.log(response.data);
 
             setSuccessMessage('Movie added successfully!');
