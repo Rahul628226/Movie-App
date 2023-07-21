@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(cors({
 
-  origin:[""],
+  origin:["https://movie-app-frontend-five.vercel.app/"],
   methods:["POST","GET"],
   credentials:true
 }));
