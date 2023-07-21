@@ -8,7 +8,7 @@ const AddMovies12 = () => {
 
   const addCategory = async () => {
     try {
-      const response = await axios.post('movie-app-ap.vercel.app/api/addMovie', {
+      const response = await axios.post('https://movie-app-ap.vercel.app/api/addMovie', {
         mname,
         actor,
       });
